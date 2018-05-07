@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Action!</h1>
+
+    <div class="conatiner"><span class="numer">4</span>
+        <div class="circle">
+            <div class="drops"></div>
+            <div class="drops"></div>
+            <div class="hand"></div>
+            <div class="hand rgt"></div>
+            <div class="holder">
+                <div class="bob">
+                    <div class="nose"></div>
+                    <div class="face">
+                        <div class="mouth">
+                            <div class="tongue"></div>
+                        </div>
+                    </div>
+                    <div class="ear"></div>
+                    <div class="ear rgt"></div>
+                    <div class="neck"></div>
+                </div>
+            </div>
+        </div><span class="numer">4</span>
+    </div>
+<h2 th:text="'Error:'+${error}"></h2>
+<h3 th:text="'Status code:'+${status}"></h3>
+    <p>This is how you can show your error messages. And you can customise them depending on what the case is. </p>
+    <p>It is better to show as little information as possible in an error message, because it is very likely to be publicly visible.</p>
+    <p>Also remember that when you have an error page and are using security, it should be able to see this page whether the user is logged in or not.</p>
+    <p>The styling is kindly provided by <a href="https://codepen.io/vineethtr/pen/NRzNLz">Vineeth.TR</a></p>
+</body>
+</html>
