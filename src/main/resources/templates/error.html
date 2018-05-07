@@ -44,5 +44,18 @@
            </div><span class="numer">4</span>
        </div>
 
+<div th:if="${status}!=404">
+    <h2 th:text="'Error:'+${error}"></h2>
+    <p></p>
+    <h3 th:text="'Status code:'+${status}"></h3>
+    <p></p>
+    <h3 th:text="'Message:'+${message}"></h3>
+    <p>This is how you can show your error messages. And you can customise them depending on what the case is.
+        It is better to show as little information as possible in an error message, because it is very likely to be publicly visible.</p>
+    <p>Also remember that when you have an error page and are using security, it should be able to see this page whether the user is logged in or not.</p>
+    <div> <p>The styling is kindly provided by <a href="https://codepen.io/vineethtr/pen/NRzNLz">Vineeth.TR</a></p></div>
+
+</div>
+
 </body>
 </html>
