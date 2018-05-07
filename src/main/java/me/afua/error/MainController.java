@@ -11,4 +11,10 @@ public class MainController {
     {
         return "index";
     }
+
+    @RequestMapping("/testerror")
+    public String showErrorTrigger()
+    {
+        return "errortrigger";
+    }
 }
